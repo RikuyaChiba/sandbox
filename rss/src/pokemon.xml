@@ -1,0 +1,31 @@
+<?xml-model href="pokemon.xsd"?>
+<rss version="2.0">
+  <channel>
+    <title>ポケポケの最新情報をお届け！</title>
+    <link>https://pokepoke.com/</link>
+    <description>今流行りのポケポケの最新情報をお届けするサイトです</description>
+    <language>ja</language>
+    <managingEditor>pokeManager@domain.co.jp</managingEditor>
+    <webMaster>pokeMaster@doamin.co.jp</webMaster>
+    <lastBuildDate>Sun, 29 Dec 2024 22:54:00 +0900</lastBuildDate>
+    <category>Entertainment</category>
+  </channel>
+  <item>
+    <title>ジャローダ×セレビーが強すぎる！</title>
+    <link>https://pokepoke.com/article/1</link>
+    <description>ポケポケの新しいパック幻の島で登場したセレビー×ジャローダのデッキの使い方を解説！</description>
+    <author>pokeauthor@domain.co.jp</author>
+    <category>Entertainment</category>
+    <pubDate>29, Dec 2024 23:08:00 +0900</pubDate>
+    <guid>https://pokepoke.com/article/1</guid>
+  </item>
+  <item>
+    <title>オーベムが実は強い？</title>
+    <link>https://pokepoke.com/article/1</link>
+    <description>ポケポケの新しいパック幻の島で登場したオーベムと合わせたフーディンデッキの使い方を解説！</description>
+    <author>pokeauthor@domain.co.jp</author>
+    <category>Entertainment</category>
+    <pubDate>29, Dec 2024 23:14:00 +0900</pubDate>
+    <guid>https://pokepoke.com/article/2</guid>
+  </item>
+</rss>
