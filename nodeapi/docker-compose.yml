@@ -1,0 +1,41 @@
+version: "3.9"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./docker/web/Dockerfile
+    ports:
+      - '3000:8080'
+    volumes:
+      - type: bind
+        source: ./src
+        target: /usr/src/app
+      - type: volume
+        source: node_modules
+        target: /usr/src/app/node_modules
+    tty: true
+
+  db:
+    build:
+      context: .
+      dockerfile: ./docker/db/Dockerfile
+    ports:
+      - '3306:33060'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: node_api
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+      TZ: 'Asia/Tokyo'
+    volumes:
+      - type: volume
+        source: mysql_volume
+        target: /var/lib/mysql
+      - type: bind
+        source: ./docker/db/initdb.d
+        target: /docker-entry-point-initdb.d
+    
+
+volumes:
+  node_modules:
+  mysql_volume:
